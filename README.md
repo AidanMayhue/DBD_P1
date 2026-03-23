@@ -1,4 +1,4 @@
-#DS 4320 Project 1
+# DS 4320 Project 1
 
 Executive Summary
 
@@ -16,7 +16,7 @@ Pipeline
 
 License
 
-##Problem Definition
+## Problem Definition
 
 Initial General Problem
 
@@ -26,7 +26,7 @@ Motivation
 
 Press Release
 
-##Domain Exposition
+## Domain Exposition
 
 Terminology
 
@@ -36,7 +36,7 @@ Background reading
 
 Summary of data table
 
-##Data Creation
+## Data Creation
 
 Paragraph
 
@@ -48,7 +48,7 @@ Bias Mitigation
 
 Rationale
 
-##Metadata
+## Metadata
 
 Schema ERD
 
