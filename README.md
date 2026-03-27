@@ -23,8 +23,11 @@ Initial General Problem
 The general problem is predicting stock prices. The specific problem is that there is a lack of robust and well defined sports data sets to perform analytics on, hindering the efforts of researchers who are trying to prevent injury.
 
 Rationale
+
 The general problem is describing the problem space; in this case it is finding methods for preventing athelete injury. On a deeper level the general problem does not describe the issues preventing this problem from being solved. The refined problem of there not being a well defined and deep dataset to perform these analytics describes the reason why the general problem hasn't been solved. This mirrors the double diamond model where a general problem space is defined and then a specific question/problem is developed to initiate the model.
+
 Motivation
+
 This project is attempting to create a well documented and robust dataset for soccer players. This is done through combining subjective data in the form of answers to questions and objective data like GPS movement. By creating a well defined dataset, the goal is that this will lead to more research for soccer athelete injury prevention.
 Press Release
 
