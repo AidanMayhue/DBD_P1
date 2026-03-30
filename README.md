@@ -78,7 +78,7 @@ Terminology
 
 
 Project Domain
-This project lives in the domain of finance. It is primarily concerned with helping visualize and create potential investment strategies. This relates to the finance world where the field is focused on the study of assets and leveraging them for capital gain. This project wants to display the overall gains of multiple assets within each type of asset in order to leverage them for capital gain.
+This project lives in the domain of finance. It is primarily concerned with helping visualize and create potential investment strategies. This relates to the finance world where the field is focused on the study of assets and leveraging them for capital gain. This project wants to display the overall gains of multiple assets within each type of asset in order to leverage them for capital gain. Specifically, this project is interested assets leveraged for long term gain by using a strategy commonly referred to as buying and holding.
 
 Background reading
 
@@ -87,7 +87,7 @@ Summary of data table
 
 | Title | Description | Link |
 |-------|-------------|------|
-| StockData: An Open Investment Transaction Dataset | Presents a real-world, anonymised open dataset of over 2,700 brokerage transaction records spanning 2020–2024, covering stocks, ETFs, dividends, and multi-asset holdings. Designed to support research in portfolio analysis, performance measurement, and financial ML — a direct financial parallel to the SoccerMon dataset. | https://pmc.ncbi.nlm.nih.gov/articles/PMC12907104/ |
+| StockData: An Open Investment Transaction Dataset | Presents a real-world, anonymised open dataset of over 2,700 brokerage transaction records spanning 2020–2024, covering stocks, ETFs, dividends, and multi-asset holdings. Designed to support research in portfolio analysis, performance measurement, and financial ML | https://pmc.ncbi.nlm.nih.gov/articles/PMC12907104/ |
 | Enhancing Portfolio Management Using Artificial Intelligence: Literature Review | A broad open-access review of how AI and deep learning — including LSTM, GRU, and reinforcement learning — are applied to portfolio management tasks such as asset allocation, risk assessment, and time-series forecasting. Covers both traditional assets (stocks, bonds) and modern approaches. | https://pmc.ncbi.nlm.nih.gov/articles/PMC11033520/ |
 | Analyzing the Critical Steps in Deep Learning-Based Stock Forecasting: A Literature Review | A systematic review of deep learning stock prediction studies from 2020–2024, examining the full pipeline: data collection, feature selection, denoising, model architecture, and performance evaluation. Useful for understanding best practices when applying ML to financial time-series data. | https://pmc.ncbi.nlm.nih.gov/articles/PMC11623133/ |
 | Forecasting Stock Market Prices Using Machine Learning and Deep Learning Models: A Systematic Review | Comprehensive review of ML and deep learning techniques — including supervised learning, ensemble methods, and time-series algorithms — applied to forecasting stocks, ETFs, bonds, and cryptocurrencies. Covers model comparisons, performance metrics, and practical investment applications. | https://www.mdpi.com/2227-7072/11/3/94 |
