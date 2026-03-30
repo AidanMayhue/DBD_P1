@@ -15,7 +15,7 @@ Data: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpa
 
 Pipeline
 
-License: MIT
+License: https://github.com/AidanMayhue/DBD_P1/blob/main/LICENSE
 
 ## Problem Definition
 
