@@ -9,7 +9,7 @@ NetID: xdw9vp
 
 DOI:
 
-Press Release
+Press Release: https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
 
 Data: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=AygUAl
 
