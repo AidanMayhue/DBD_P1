@@ -1,6 +1,7 @@
 # DS 4320 Project 1: Buy and Hold Investment Secondary Database
 
 **Executive Summary**
+
 This readme documents an asset class secondary dataset for DS 4320 Data By Design. This project includes completed project metadata such as a name, computing ID, DOI, analysis code links, and a license. A summary table is included additionally. A problem statement, rationale, references, terminology table, callout examples and code are also included. 
 
 Name: Aidan Mayhue
