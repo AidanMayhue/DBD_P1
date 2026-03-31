@@ -17,7 +17,8 @@ This solution collects several features from yahoo finance given a wide range of
 class is visualized independently by average return. For more eager users you are given a performance metrics table which allows you to piece together
 your own ideal portfolio. Additionally if you are only interested in a specific asset class you are given a table for each asset class. For users who
 are more interested in just looking at the highest performers overall there is a list in descending order that shows you the best assets from the 
-dataset in terms of pure return.
+dataset in terms of pure return. Based on the information we've gathered stocks, cryptocurrencies, and bonds (in that order) are the best assets to invest in. ETFs
+should be selectively invested in so long as they track general indices such as the NASDAQ100. Leveraged ETFs should be avoided.
 
 ## Chart
 
