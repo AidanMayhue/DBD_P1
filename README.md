@@ -117,7 +117,14 @@ Schema ERD
 <img width="1410" height="708" alt="image" src="https://github.com/user-attachments/assets/a4ae909d-e446-4f0b-a9d4-5dbc74b36ac0" />
 
 Data tables
-
+| Tables | description | link |
+|---|---|---|
+|stock_prices.csv| Table for stock prices within the S&P 500 across several years | https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQDolNqUdibaSpIEe4RDRxX6ARo8F4Spwi20jVQ2kNE0MiM?e=OBP7nS |
+|bond_prices.csv| Table for bond prices across several years | https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQBju1NfAXHlRYWG9EnIqg0sAQKnRCKloE8mg3mp0Y6tjPs?e=kAfYiE|
+|crypto_prices.csv| Table for multiple cryptocurrency prices across several years| https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQABwvLkY6fQQpkHkFkTSpJvAUVZJFGSlYCHtAm7gKsPOSQ?e=POj8Dl |
+| etf_prices.csv | Table for multiple ETF prices across several years |https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQBMtKvXw2SsRYz596p0u0EVAdydi_BsiMPmsAdeTgjQxOA?e=WDvpWQ|
+|performance_metrics.csv|Table for aggregate statistics for each asset type| https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQDCTx6fpvvfS4Y1LMWYfkcjAX6I-iSkCq2JobUb6oQeTJw?e=6MqWDO |
+|asset_table.csv|Table cataloging each asset name |https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQANKLqkFtdFQpHbHdW52rihAQ8KqiV2ErL6-RfWF7LNitk?e=djihdT|
 Data Dictionary Table
 | Name | Data Type | Description | Example |
 |---|---|---|---|
