@@ -4,34 +4,36 @@
 
 This readme documents an asset class secondary dataset for DS 4320 Data By Design. This project includes completed project metadata such as a name, computing ID, DOI, analysis code links, and a license. A summary table is included additionally. A problem statement, rationale, references, terminology table, callout examples and code are also included. 
 
-Name: Aidan Mayhue
+**Name**: Aidan Mayhue
 
-NetID: xdw9vp
+**NetID**: xdw9vp
 
-DOI:10.5281/zenodo.19357351
+**DOI**:10.5281/zenodo.19357351
 
-Press Release: https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
+**Press Release**: https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
 
-Data: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=AygUAl
+**Data**: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=AygUAl
 
-Pipeline
+**Pipeline**:
 
-License: https://github.com/AidanMayhue/DBD_P1/blob/main/LICENSE
+**License**:MIT License: https://github.com/AidanMayhue/DBD_P1/blob/main/LICENSE
 
 ## Problem Definition
 
-Initial General Problem
-The general problem is predicting stock prices. To extrapolate on this problem, there are multiple types of assets that can be tracked in a portfolio, so identifying asset types that see the highest return increases potential ROI.
-Additionally, many assets are more risky than others, meaning many are not useful for long term investment. Furthermore, identifying the goal of the investor is important, do they want to increase their potential to make money in a high risk portfolio? Or are they just planning for retirement? With all of these in mind, the specific problem is identifying assets among a list of asset types that have the highest return on investment given a strategy of buying and holding.
+**Initial General Problem**
 
-Rationale
+The general problem is predicting stock prices. To extrapolate on this problem, there are multiple types of assets that can be tracked in a portfolio, so identifying asset types that see the highest return increases potential ROI.
+Additionally, many assets are more risky than others, meaning many are not useful for long term investment. Furthermore, identifying the goal of the investor is important, do they want to increase their potential to make money in a high risk portfolio? Or are they just planning for retirement? With all of these in mind, the specific problem is identifying assets among a list of asset types that have the highest return on investment given a strategy of buying and holding. For the uninitiated, buy and hold is a strategy of purchasing assets and selling only when your time in the market is completely finished, such as retirement.
+
+**Rationale**
 
 The general problem is describing the main risk for investing. If you make poor decisions for your portfolio there is a strong chance at losing money. The specific problem shifts to identifying what the best investment options are for users. I chose to explore ETFs because they are generally considered low risk and beginner friendly. Crypto currencies are high risk and I'm hoping the data will reflect that. The specific problem for this project will revolve around creating a dataset of the highest percentage return on investment within ETFs, stocks, crypto, and bonds. This will solve the issue of identifying safe long term investments.
 
-
-Motivation
+**Motivation**
 
 As someone who has personally started investing it can be difficult to make decisions that are logically driven and not in some ways dependent on emotion. Part of this is due to my lack of knowledge on the subject. I primarily choose to invest in Exchange Traded funds, but I have some money in stocks which can be difficult to navigate. The motivation behind this project is to create a comprehensive overview of highest performing assets in each category in order for long term traders to create logical plans that are not informed by emotion, but rather statistics. Ideally a new trader could explore this dataset and make decisions for how much risk they are willing to accept in a long term portfolio.
+
+**Headline**
 
 Beginner friendly financial asset modeling tool
 
@@ -39,7 +41,8 @@ https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
 
 ## Domain Exposition
 
-Terminology
+**Terminology**
+
 | Term | Summary |
 |------|---------|
 | ETF (Exchange Traded Fund) | A basket of assets (stocks, bonds, commodities) that trades on an exchange like a single stock, offering built-in diversification. |
@@ -78,10 +81,11 @@ Terminology
 | Short selling | Borrowing shares and selling them with the intent to buy them back later at a lower price — a strategy that profits when a stock falls. |
 
 
-Project Domain
-This project lives in the domain of finance. It is primarily concerned with helping visualize and create potential investment strategies. This relates to the finance world where the field is focused on the study of assets and leveraging them for capital gain. This project wants to display the overall gains of multiple assets within each type of asset in order to leverage them for capital gain. Specifically, this project is interested assets leveraged for long term gain by using a strategy commonly referred to as buying and holding.
+**Project Domain**
 
-Background reading
+This project lives in the domain of finance. It is primarily concerned with helping visualize and create potential investment strategies. This relates to the finance world where the field is focused on the study of assets and leveraging them for capital gain. This project wants to display the overall gains of multiple assets within each type of asset in order to leverage them for capital gain. Specifically, this project is interested assets leveraged for long term gain by using a strategy commonly referred to as buying and holding. This focuses on a subset of investors who believe long term gain will lead to short term volatility having minimal impact on their portfolio. This is also tangentially related to real estate where buy and hold strategies are also common.
+
+**Background reading**
 
 Summary of data table
 ---
