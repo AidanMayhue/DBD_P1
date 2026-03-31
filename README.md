@@ -100,10 +100,9 @@ Summary of data table
 
 ## Data Creation
 
-Paragraph
-For the Data collection process I primarily collected data from the yfinance package, a python package connected to yahoo finance's API.I can select from a wide range of entries. I do not have the ability to sort by asset type, so I curated a list of and wrote a script to select the top performing assets in each asset category. This was gathered from sources that most people may navigate towards for a comprehensive view, such as etfdb.com or wikipedia.
+For the Data collection process I primarily collected data from the yfinance package, a python package connected to yahoo finance's API.I can select from a wide range of entries. I do not have the ability to sort by asset type, so I curated a list of and wrote a script to select the top performing assets in each asset category. This was gathered from sources that most people may navigate towards for a comprehensive view, such as etfdb.com or wikipedia. The list of stocks found in the S&P500 was currated through scraping wikipedia in order to have a complete list for the stocks dataset,as by definition companies in the S&P are the top performing stocks to judge.
 
-From then I wrote a script to pull data for each asset across several years using the yfinance package. These then needed to be reformatted into a usable way where the stock was on the rows rather than the columns. Two new tables were then derived, one to track every asset and their ticker, and another to track some generalizable statistics for each asset (such as capital gains). These were all then downloaded as separate CSVs.
+From then I wrote a script to pull data for each asset across several years using the yfinance package. These then needed to be reformatted into a usable way where the stock was on the rows rather than the columns. This reformatting also placed features on the columns rather than the rows of the dataframes. Two new tables were then derived, one to track every asset and their ticker, and another to track some generalizable statistics for each asset (such as capital gains). These were all then downloaded as separate parquet files.
 
 Code
 
