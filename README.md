@@ -125,6 +125,7 @@ Data tables
 | etf_prices.csv | Table for multiple ETF prices across several years |https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQBMtKvXw2SsRYz596p0u0EVAdydi_BsiMPmsAdeTgjQxOA?e=WDvpWQ|
 |performance_metrics.csv|Table for aggregate statistics for each asset type| https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQDCTx6fpvvfS4Y1LMWYfkcjAX6I-iSkCq2JobUb6oQeTJw?e=6MqWDO |
 |asset_table.csv|Table cataloging each asset name |https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQANKLqkFtdFQpHbHdW52rihAQ8KqiV2ErL6-RfWF7LNitk?e=djihdT|
+
 Data Dictionary Table
 | Name | Data Type | Description | Example |
 |---|---|---|---|
