@@ -12,7 +12,7 @@ This readme documents an asset class secondary dataset for DS 4320 Data By Desig
 
 **Press Release**: https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
 
-**Data**: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=AygUAl
+**Data**: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=KIF0Ac
 
 **Pipeline**:https://github.com/AidanMayhue/DBD_P1/blob/main/solution_pipeline.ipynb
 
