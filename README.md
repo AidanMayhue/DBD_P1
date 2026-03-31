@@ -7,7 +7,7 @@ Name: Aidan Mayhue
 
 NetID: xdw9vp
 
-DOI:
+DOI:10.5281/zenodo.19357351
 
 Press Release: https://github.com/AidanMayhue/DBD_P1/blob/main/press_release.md
 
