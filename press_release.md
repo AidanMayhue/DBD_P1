@@ -20,4 +20,6 @@ are more interested in just looking at the highest performers overall there is a
 dataset in terms of pure return.
 
 ## Chart
-<img width="1589" height="1025" alt="bea7a40e-89ac-4484-b4ea-0bc53b164389" src="https://github.com/user-attachments/assets/c6d8d90b-aa29-425e-bdaa-f0b6e9995f37" />
+
+<img width="1589" height="1025" alt="bea7a40e-89ac-4484-b4ea-0bc53b164389" src="https://github.com/user-attachments/assets/67ece2cf-7ec4-48dc-84b9-2307297433c9" />
+
