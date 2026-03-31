@@ -21,5 +21,6 @@ dataset in terms of pure return.
 
 ## Chart
 
-<img width="1589" height="1025" alt="bea7a40e-89ac-4484-b4ea-0bc53b164389" src="https://github.com/user-attachments/assets/67ece2cf-7ec4-48dc-84b9-2307297433c9" />
+<img width="1590" height="1025" alt="9257013c-89b7-4c3a-919a-274398355dc4" src="https://github.com/user-attachments/assets/3d9ff181-0baf-46b0-92e4-6c9e4cc2bd14" />
+
 
