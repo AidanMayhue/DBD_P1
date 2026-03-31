@@ -142,15 +142,75 @@ Data Dictionary Table
 
 ---
 Data Dictionary Quantification of Uncertainty
-| Name | Min | Max | Precision | Sources of Uncertainty |
-|---|---|---|---|---|
-| Open | 0.001 | Unbounded | 6 decimal places | Reflects the first transaction price which may not represent true market open due to pre-market trading activity |
-| High | 0.001 | Unbounded | 6 decimal places | May underrepresent true intraday high if data provider missed transactions |
-| Low | 0.001 | Unbounded | 6 decimal places | May overrepresent true intraday low if data provider missed transactions |
-| Close | 0.001 | Unbounded | 6 decimal places | Adjusted by yfinance for splits and dividends which introduces rounding error. Adjustment methodology may differ from other data providers |
-| Volume | 0 | Unbounded | Whole integer | Crypto volume is particularly unreliable due to wash trading and exchange reporting inconsistencies. ETF volume excludes dark pool transactions |
-| TotalReturn | -1.0 | Unbounded | 4 decimal places | Sensitive to the exact start and end date chosen. Survivorship bias means poor performing delisted assets are excluded, inflating average returns |
-| AnnualizedReturn | -1.0 | Unbounded | 4 decimal places | Assumes 252 trading days per year which varies in practice. Compounds the uncertainty of TotalReturn |
-| Volatility | 0.0 | Unbounded | 4 decimal places | Based on historical daily returns which may not reflect future volatility. Crypto volatility is especially unstable due to thin markets and 24/7 trading |
-| SharpeRatio | Unbounded | Unbounded | 4 decimal places | Assumes a fixed 4% risk free rate which changes over time. Negative Sharpe ratios are difficult to interpret meaningfully. Highly sensitive to the volatility estimate |
-| MaxDrawdown | 0.0 | 1.0 | 4 decimal places | Only captures drawdowns within the selected period window. A longer period would likely reveal larger drawdowns for most assets |
+## BONDS
+**Rows:** 378,639 | **Columns:** 9
+
+**Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
+
+| Column | Mean | Median | Std Dev | Variance | Min | Max | Range | IQR | Skewness | Kurtosis | Null Count | Null % |
+|--------|------|--------|---------|----------|-----|-----|-------|-----|----------|----------|------------|--------|
+| Open | 4.36e+01 | 37.2465 | 3.58e+01 | 1.28e+03 | 0.6034 | 9.74e+02 | 9.74e+02 | 33.7690 | 7.1717 | 110.7620 | 0 | 0.0 |
+| High | 4.38e+01 | 37.3158 | 3.62e+01 | 1.31e+03 | 0.6034 | 1.01e+03 | 1.01e+03 | 33.8930 | 7.3316 | 114.7056 | 0 | 0.0 |
+| Low | 4.35e+01 | 37.1640 | 3.54e+01 | 1.25e+03 | 0.6034 | 9.17e+02 | 9.17e+02 | 33.6586 | 7.0044 | 106.7783 | 0 | 0.0 |
+| Close | 4.36e+01 | 37.2395 | 3.57e+01 | 1.28e+03 | 0.6034 | 9.58e+02 | 9.57e+02 | 33.7769 | 7.1590 | 110.5335 | 0 | 0.0 |
+| Volume | 1.21e+06 | 160300.00 | 3.69e+06 | 1.36e+13 | 0.0 | 1.51e+08 | 1.51e+08 | 849800.00 | 9.2461 | 137.5463 | 0 | 0.0 |
+
+---
+
+## CRYPTO
+**Rows:** 177,425 | **Columns:** 9
+
+**Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
+
+| Column | Mean | Median | Std Dev | Variance | Min | Max | Range | IQR | Skewness | Kurtosis | Null Count | Null % |
+|--------|------|--------|---------|----------|-----|-----|-------|-----|----------|----------|------------|--------|
+| Open | 6.34e+02 | 1.8839 | 4.72e+03 | 2.23e+07 | 0.0 | 1.06e+05 | 1.06e+05 | 17.4589 | 11.0421 | 143.0770 | 1997 | 1.13 |
+| High | 6.53e+02 | 1.9709 | 4.85e+03 | 2.36e+07 | 0.0 | 1.08e+05 | 1.08e+05 | 18.1651 | 10.9954 | 141.5830 | 1997 | 1.13 |
+| Low | 6.14e+02 | 1.7997 | 4.58e+03 | 2.10e+07 | 0.0 | 1.05e+05 | 1.05e+05 | 16.6495 | 11.1118 | 145.3389 | 1997 | 1.13 |
+| Close | 6.28e+02 | 1.7950 | 4.70e+03 | 2.21e+07 | 0.0 | 1.06e+05 | 1.06e+05 | 16.8127 | 11.1115 | 144.9231 | 0 | 0.00 |
+| Volume | 8.92e+08 | 5.05e+07 | 4.79e+09 | 2.29e+19 | 0.0 | 6.13e+11 | 6.13e+11 | 2.25e+08 | 22.5947 | 1786.6952 | 0 | 0.00 |
+
+---
+
+## ETF
+**Rows:** 954,091 | **Columns:** 9
+
+**Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
+
+| Column | Mean | Median | Std Dev | Variance | Min | Max | Range | IQR | Skewness | Kurtosis | Null Count | Null % |
+|--------|------|--------|---------|----------|-----|-----|-------|-----|----------|----------|------------|--------|
+| Open | 3.01e+07 | 33.3991 | 2.61e+09 | 6.83e+18 | 0.06 | 6.07e+11 | 6.07e+11 | 44.7617 | 120.3645 | 16607.7473 | 0 | 0.0 |
+| High | 3.16e+07 | 33.6078 | 2.75e+09 | 7.54e+18 | 0.07 | 6.12e+11 | 6.12e+11 | 45.0056 | 119.5795 | 16198.6896 | 0 | 0.0 |
+| Low | 2.87e+07 | 33.1572 | 2.49e+09 | 6.18e+18 | 0.05 | 5.15e+11 | 5.15e+11 | 44.5121 | 118.2719 | 15710.8395 | 0 | 0.0 |
+| Close | 2.98e+07 | 33.3946 | 2.58e+09 | 6.65e+18 | 0.06 | 5.15e+11 | 5.15e+11 | 44.7574 | 117.7037 | 15450.7471 | 0 | 0.0 |
+| Volume | 7.13e+06 | 434100.00 | 4.87e+07 | 2.38e+15 | 0.0 | 5.97e+09 | 5.97e+09 | 2.78e+06 | 38.6928 | 2433.9813 | 0 | 0.0 |
+
+---
+
+## STOCKS
+**Rows:** 3,486,691 | **Columns:** 9
+
+**Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
+
+| Column | Mean | Median | Std Dev | Variance | Min | Max | Range | IQR | Skewness | Kurtosis | Null Count | Null % |
+|--------|------|--------|---------|----------|-----|-----|-------|-----|----------|----------|------------|--------|
+| Open | 5.57e+01 | 22.9500 | 1.62e+02 | 2.63e+04 | 0.0065 | 9.91e+03 | 9.91e+03 | 45.8627 | 22.5808 | 826.6881 | 0 | 0.0 |
+| High | 5.63e+01 | 23.2532 | 1.64e+02 | 2.69e+04 | 0.0065 | 9.96e+03 | 9.96e+03 | 46.3275 | 22.5700 | 825.0982 | 0 | 0.0 |
+| Low | 5.50e+01 | 22.6405 | 1.60e+02 | 2.57e+04 | 0.0062 | 9.79e+03 | 9.79e+03 | 45.3739 | 22.6102 | 829.0880 | 0 | 0.0 |
+| Close | 5.57e+01 | 22.9555 | 1.62e+02 | 2.63e+04 | 0.0065 | 9.92e+03 | 9.92e+03 | 45.8655 | 22.5797 | 826.2415 | 0 | 0.0 |
+| Volume | 7.60e+06 | 1.80e+06 | 4.52e+07 | 2.05e+15 | 0.0 | 9.23e+09 | 9.23e+09 | 3.91e+06 | 28.3274 | 1737.5321 | 0 | 0.0 |
+
+---
+
+## PERFORMANCE METRICS
+**Rows:** 3,532 | **Columns:** 7
+
+**Column names:** Ticker, Period, TotalReturn, AnnualizedReturn, Volatility, SharpeRatio, MaxDrawdown
+
+| Column | Mean | Median | Std Dev | Variance | Min | Max | Range | IQR | Skewness | Kurtosis | Null Count | Null % |
+|--------|------|--------|---------|----------|-----|-----|-------|-----|----------|----------|------------|--------|
+| TotalReturn | 2.3194 | 0.2331 | 48.1237 | 2315.8927 | -1.0000 | 2001.9891 | 2002.9891 | 0.8600 | 40.7404 | 1688.8703 | 0 | 0.0 |
+| AnnualizedReturn | 0.0910 | 0.0634 | 0.2877 | 0.0827 | -0.9903 | 7.4161 | 8.4064 | 0.1504 | 7.6341 | 146.8278 | 0 | 0.0 |
+| Volatility | 8.5692 | 0.2726 | 181.7796 | 33043.8277 | 0.0024 | 7039.0750 | 7039.0726 | 0.1813 | 29.1395 | 967.4316 | 0 | 0.0 |
+| SharpeRatio | 0.1283 | 0.0940 | 0.7786 | 0.6062 | -11.5768 | 9.4198 | 20.9966 | 0.6382 | -0.4724 | 32.7652 | 0 | 0.0 |
+| MaxDrawdown | 0.4024 | 0.3777 | 0.2458 | 0.0604 | 0.0000 | 1.0000 | 1.0000 | 0.3330 | 0.5951 | -0.2139 | 0 | 0.0 |
