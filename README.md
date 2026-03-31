@@ -110,21 +110,26 @@ From then I wrote a script to pull data for each asset across several years usin
 |-------|-------------|------|
 |data-creation-parquet-final | This script collects financial asset data from the yahoo finance API and compiles it into a usable dataframe. | https://github.com/AidanMayhue/DBD_P1/blob/main/data-creation-parquet-final.ipynb |
 
-Bias Identification
+**Bias Identification**
+
 Since I am primarily pulling from the yahoo finance API via yfinance issues with yahoo finance will impact the accuracy of my data. Yahoo Finance has issues with significant amounts of missing data across asset types. Additionally, bias may come about through the assets I chose. Getting a list of every asset is not feasible so I tried to create a comprehensive list that was composed of different kinds of assets within each asset types. For example I have some leveraged ETFS in the ETF dataset which may heavily skew the way regression analysis performs.
 
-Bias Mitigation
+**Bias Mitigation**
+
 Since the dataset is large I can mitigate this issue by selectively ignoring missing data or choosing to remove particularly troublesome entries. If one day of data happens to be missing then the opening value from the days surrounding the missing value can be averaged to estimate the gain or loss from the missing day. Addressing the point on leveraged/inverse assets, I can remove these from the dataset for a more comprehensive view of the broad market ETFs that generally do outperform individual stocks.
 
-Rationale
+**Rationale**
+
 Since each entry on the table represents a day for that particular asset, if one happens to be missing data eschewing it from the data will pose minimal risk as long as its not several years of data missing. The rationale behind removing leveraged ETFS is that they are not considered a long term investment since they depend on the market declining to see any decent ROI. This can be great in financial crises (such as the current one) but introduces a lot of risk should the market rally. These are not safe for the average long term investor and as such could reasonably be removed from the data.
 
 ## Metadata
 
-Schema ERD
+**Schema ERD**
+
 <img width="1410" height="708" alt="image" src="https://github.com/user-attachments/assets/a4ae909d-e446-4f0b-a9d4-5dbc74b36ac0" />
 
-Data tables
+**Data tables**
+
 | Tables | description | link |
 |---|---|---|
 |stock_prices.csv| Table for stock prices within the S&P 500 across several years | https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQDolNqUdibaSpIEe4RDRxX6ARo8F4Spwi20jVQ2kNE0MiM?e=OBP7nS |
@@ -134,7 +139,8 @@ Data tables
 |performance_metrics.csv|Table for aggregate statistics for each asset type| https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQDCTx6fpvvfS4Y1LMWYfkcjAX6I-iSkCq2JobUb6oQeTJw?e=6MqWDO |
 |asset_table.csv|Table cataloging each asset name |https://myuva-my.sharepoint.com/:u:/g/personal/xdw9vp_virginia_edu/IQANKLqkFtdFQpHbHdW52rihAQ8KqiV2ErL6-RfWF7LNitk?e=djihdT|
 
-Data Dictionary Table
+**Data Dictionary Table**
+
 | Name | Data Type | Description | Example |
 |---|---|---|---|
 | Ticker | String | Unique symbol identifying the asset across all tables. Primary key in ASSET, foreign key in all other tables | SPY |
@@ -157,8 +163,11 @@ Data Dictionary Table
 | MaxDrawdown | Float | The largest peak-to-trough percentage decline over the period | 0.1823 |
 
 ---
-Data Dictionary Quantification of Uncertainty
-## BONDS
+
+**Data Dictionary Quantification of Uncertainty**
+
+**Bonds**
+
 **Rows:** 378,639 | **Columns:** 9
 
 **Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
@@ -173,7 +182,8 @@ Data Dictionary Quantification of Uncertainty
 
 ---
 
-## CRYPTO
+**Cryptocurrencies**
+
 **Rows:** 177,425 | **Columns:** 9
 
 **Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
@@ -188,7 +198,8 @@ Data Dictionary Quantification of Uncertainty
 
 ---
 
-## ETF
+**ETFs**
+
 **Rows:** 954,091 | **Columns:** 9
 
 **Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
@@ -203,7 +214,8 @@ Data Dictionary Quantification of Uncertainty
 
 ---
 
-## STOCKS
+**STOCKS**
+
 **Rows:** 3,486,691 | **Columns:** 9
 
 **Column names:** Date, Ticker, Open, High, Low, Close, Volume, AssetClass, Category
@@ -218,7 +230,8 @@ Data Dictionary Quantification of Uncertainty
 
 ---
 
-## PERFORMANCE METRICS
+**PERFORMANCE METRICS**
+
 **Rows:** 3,532 | **Columns:** 7
 
 **Column names:** Ticker, Period, TotalReturn, AnnualizedReturn, Volatility, SharpeRatio, MaxDrawdown
