@@ -104,9 +104,11 @@ For the Data collection process I primarily collected data from the yfinance pac
 
 From then I wrote a script to pull data for each asset across several years using the yfinance package. These then needed to be reformatted into a usable way where the stock was on the rows rather than the columns. This reformatting also placed features on the columns rather than the rows of the dataframes. Two new tables were then derived, one to track every asset and their ticker, and another to track some generalizable statistics for each asset (such as capital gains). These were all then downloaded as separate parquet files.
 
-Code
+**Code**
+
 | Title | Description | Link |
-|data-creation-parquet-final | This script collects financial asset data from the yahoo finance API and compiles it into a usable dataframe. | https://github.com/AidanMayhue/DBD_P1/blob/main/data-creation-parquet-final.ipynb|
+|-------|-------------|------|
+|data-creation-parquet-final | This script collects financial asset data from the yahoo finance API and compiles it into a usable dataframe. | https://github.com/AidanMayhue/DBD_P1/blob/main/data-creation-parquet-final.ipynb |
 
 Bias Identification
 Since I am primarily pulling from the yahoo finance API via yfinance issues with yahoo finance will impact the accuracy of my data. Yahoo Finance has issues with significant amounts of missing data across asset types. Additionally, bias may come about through the assets I chose. Getting a list of every asset is not feasible so I tried to create a comprehensive list that was composed of different kinds of assets within each asset types. For example I have some leveraged ETFS in the ETF dataset which may heavily skew the way regression analysis performs.
