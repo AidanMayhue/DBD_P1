@@ -15,6 +15,7 @@ This readme documents an asset class secondary dataset for DS 4320 Data By Desig
 **Data**: https://myuva-my.sharepoint.com/:f:/g/personal/xdw9vp_virginia_edu/IgDWOpaNsqN1QYExPDeQ93AEASsN_uLnogjY5FR4LwzhXhc?e=KIF0Ac
 
 **Pipeline**:
+
 Creation code:
 https://github.com/AidanMayhue/DBD_P1/blob/main/data-creation-parquet-final.ipynb
 
